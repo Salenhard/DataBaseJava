@@ -7,7 +7,9 @@ import java.io.IOException;
 
 public class DataBase {
     public ObservableList<Person> objects;
-
+    DataBase() {
+    objects = new ObservableList<?>();
+    }
     public void readFile(String fileName) throws IOException {
         Person s = new Person();
         try {
